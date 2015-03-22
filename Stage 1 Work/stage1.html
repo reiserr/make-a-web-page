@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stage1.css">
+    <title>Arissa's Notes</title>
+  </head>
+  <body> 
+    <div class="h1">
+      IMPORTANT CONCEPTS
+    </div>
+    <div class="notes">
+      <div class="lesson">
+        <div class="h2">
+          LESSON 1: THE BASICS OF THE WEB & HTML
+        </div>
+        <div class="concept">      
+          <div class="h3">
+            HOW THE WEB WORKS
+          </div>
+          <div class="description">
+            You use your computers <em>browser</em> to make an <em>HTTP request</em> via the <em>internet</em>. The internet makes the request to <em>servers</em> which respond with files (such as <em>HTML Documents</em>) and sends them back to the browser to be displayed on your screen.
+          </div>
+        </div>
+        <div class="concept">
+          <div class="h3">
+            HTML
+          </div>
+          <div class="description">
+            <p>
+              HTML stands for <em>Hyper Text Markup Link</em> and is comprised of four main components:
+            </p>
+            <div class="list">
+              1. <em><b>Text Content:</b></em> What you see
+              <br>
+              2. <em><b>Markup:</b></em> What it looks like
+              <br>
+              3. <em><b>References to Other Documents:</b></em> e.g. images and videos
+              <br>
+              4. <em><b>Links to Other Pages</b></em>
+            </div>
+            <p>HTML is the basis for the majority of webpages.
+            </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="h3">
+            TAGS & ELEMENTS
+          </div>
+          <div class="description">
+            <p>
+              Tags and elements are part of HTML markup. 
+            </p>     
+            <p>
+              <em>Tags</em> alter the way certain content is displayed.
+            </p>      
+            <p>
+              The term <em>element</em> refers to the tag and the content within the tag.
+            </p> 
+          </div>
+        </div>
+        <div class="concept">
+        <div class="h3">
+          WHY COMPUTERS ARE STUPID
+        </div>
+        <div class="description">
+          Computers are literal and non-intuitive. They rely solely on human instruction in order to function. If a human error is made the computer will not know how to properly behave until the error is rectified by a human.
+        </div>
+      </div>
+        <div class="concept">
+          <div class="h3">
+            INLINE VS. BLOCK ELEMENTS
+          </div>
+          <div class="description">
+            <p>
+              HTML elements are considered either <em>inline</em> or <em>block</em>. Block elements form an invisible box of width and height around the content.
+            </p>      
+            <p>
+              <a href="http://bit.ly/1BAuzA1">This</a> video gives a good overview of the differences between inline vs. block elements.  
+            </p>
+          </div>
+      </div>
+      </div>
+      <div class="lesson">
+        <div class="h2">
+          LESSON 2: CREATING A STRUCTURED DOCUMENT WITH HTML
+        </div>
+        <div class="concept">
+          <div class="h3">
+            A WEBSITE AS A HOUSE
+          </div>
+          <div class="description">
+            If you compare a website to a house, HTML is the <em>structure</em> (where the walls are placed, etc), CSS is the <em>style</em> (what color are the walls, etc), and Java Script is the <em>interactive components</em> (TV remote, garage opener, etc.).
+          </div>
+        </div>
+        <div class="concept">
+          <div class="h3">
+            THE CODE TREE
+          </div>
+          <div class="description">
+            The nodes of an HTML document are layed out as a tree-like structure called the DOM (<em>document object model</em>) or the DOM tree. Nodes (sideways triangles) are HTML elements each with an opening and closing tag.
+          </div>
+        </div>
+        <div class="concept">
+          <div class="h3">
+            BOXES EVERYWHERE
+          </div>
+          <div class="parent">
+            <div class="image">
+            <img src="http://bit.ly/1EaAhWx" alt="Image Not Available">
+          </div>
+            <div class="childdescription">
+              <p>
+                Everything you see on a webpage can be broken down into boxes.What you see within those boxes can be altered using different languages (HTML, CSS, Java, etc).
+              </p>
+            </div>          
+          </div>
+        </div>
+      </div>
+      <div class="lesson">
+        <div class="h2">
+          LESSON 3: ADDING CSS STYLE TO HTML STRUCTURE
+        </div>
+        <div class="concept">
+          <div class="h3">
+            WHAT IS CSS?
+          </div>
+          <div class="description">
+            <p>
+              CSS stands for <em>Cascading Style Sheets</em> and is used to control the <em>style</em> of HTML elements. This is done by using the following steps:
+            </p>
+            <div class="list">
+              1. Choose an HTML class or element to alter (this will be your <b><em>selector</em></b>).
+              <br>
+              2. Choose an <b><em>attribute</em></b> (color, font-size, etc.) of your selector that you would like to stylize.
+              <br>
+              3. Allocate a <b><em>value</em></b> (size, color, etc.) to your chosen attribute.
+            </div>
+            <p>
+              The combination of <em>attribute:value</em> is called a <em>rule</em> and will be applied to any part of your code indicated by the selector. Descending elements can also inherit CSS styling from their ancestor elements.
+            </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="h3">
+            AVOIDING REPETITION
+          </div>
+          <div class="description">
+            Repetitive CSS is difficult to maintain and confusing to look at. Avoid repetitive CSS by classifying like elements in your HTML markup with the same name. When you use the HTML class as your selector in CSS the style will be applied to every element within the class even though you only coded it once.
+          </div>
+        </div>
+        <div class="concept">
+          <div class="h3">
+            HOW TO INCLUDE CSS IN YOUR WEBPAGE
+          </div>
+          <div class="method">
+            <div class="h4">
+              METHOD 1
+            </div> 
+            <div class="description">
+              Although best for smaller projects, you could write CSS within a <em>style</em> tag in the <em>head</em> element of your HTML.
+            </div>         
+          </div>
+          <div class="method">
+            <div class="h4">
+              METHOD 2
+            </div> 
+            <div class="description">
+              Create a .css file separate from your .html file and place both files in one folder. Link to your .css file using the <em>link</em> tag within the <em>head</em> tag of your HTML markup.
+            </div>
+          </div>
+          <div class="method">
+            <div class="h4">
+              METHOD 3
+            </div>
+            <div class="description">
+              Generally a poor method due to repetitiveness but it does occur sometimes so it's good to be familiar with it.
+            </div>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="h3">
+            THE BOX MODEL
+          </div>
+          <div class="description">
+            <a href="http://bit.ly/1wpx1nZ">This</a> is an excellent demo of how boxes are structured.
+          </div>
+        </div>
+        <div class="concept">
+          <div class="h3">
+            BOX SIZING
+          </div>
+          <div class="description">
+            <p>
+              1. Each HTML element is a box and each box has four elements:
+            </p>
+            <div class="list">
+              i) <b><em>Contents</em></b>
+              <br>
+              ii) <b><em>Padding</em></b>
+              <br>
+              iii) <b><em>Border</em></b>
+              <br>
+              iv) <b><em>Margin</em></b>
+            </div>
+            <p>
+              2. Due to the number of components in each box, sizing can be difficult.
+            </p>
+            <p>
+              3. There are two main techniques for box sizing:
+            </p>
+            <div class="list">
+              i) Set box size in terms of <b><em>percentage</em></b> instead of pixels
+              <br>
+              ii) Set the value of the <b><em>box-size</em> attribute</b> to <em>border-box</em>
+            </div>
+            <p>
+              4. Different browsers may display the same code differently. You should use the following prefixes infront of the <em>box-size</em> attribute:
+            </p>
+            <div class="list">
+              i) <b><em>-wbkit-</em></b>
+              <br>
+              ii) <b><em>-moz-</em></b>
+              <br>
+              iii) <b><em>-ms-</em></b>
+            </div>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="h3">
+            BOX POSITIONING
+          </div>
+          <div class="description">
+            <p>
+              1. Because Divs are <em>block</em> elements (not <em>inline</em>) they automaticall take the width of the page.
+            </p>
+            <p>
+              2. Adding the rule <b><em>display:flex</em></b> (flexbox) to a Parent Div will override this behavior and allow the Children to appear next to each other.
+            </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="h3">
+            CODE, TEST, REFINE
+          </div>
+          <div class="description">
+            <p>
+              1. <b><em>Look for natural boxes</em></b>
+            </p>
+            <p>
+              2. <b><em>Look for repeated styles and semantic elements</em></b>
+            </p>
+            <p>
+              3. <b><em>Write your HTML</em></b>
+            </p>
+            <p>
+              4. <b><em>Apply styles</em></b>
+            </p>
+            <p>
+              5. <b><em>Fix things</em></b>
+            </p>
+          </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
